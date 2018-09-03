@@ -1,0 +1,90 @@
+#include<iostream>
+using namespace std;
+int hashfunction(string s){
+
+    return 1;
+}
+struct node{
+    int data;
+    node * next;
+
+    node(){
+        data = 0;
+        next = NULL;
+    }
+    node(int data){
+        this->data = data;
+        this->next = NULL;
+    }
+};
+class hashtable{
+    node* table[100];
+
+public:
+    hashtable(){
+        for(int i=0;i<100;i++){
+            table[i] = NULL;
+        }
+    }
+
+    void insert(int value, int key){
+        if(table[key]==NULL){
+            table[key] = new node(value);
+        }
+        node * head = table[key];
+        while(head->next!=NULL){
+            head = head->next;
+        }
+        node * temp = new node(value);
+        head->next = temp;
+    }
+
+    bool isPresent(int value, int key){
+        if(table[key]==NULL){
+            return false;
+        }
+        node * head = table[key];
+        while(head->next!=NULL){
+            if(head->data == value){
+                return true;
+            }
+            head = head->next;
+        }
+        return false;
+    }
+
+    int getValue(int key){
+        return table[key]->data;
+    }
+
+    void removeValue(int key,int value){
+        node * head = table[key];
+        if(head->data==value){
+            node * temp = head->next;
+            table[key] = temp;
+            delete head;
+            return;
+        }
+        node * prev = head;
+        head = head->next;
+        while(head!=NULL){
+            if(head->data==value){
+                prev->next = head->next;
+                node * temp = head;
+                delete head;
+                return;
+            }
+            prev = head;
+            head = head->next;
+        }
+    }
+};
+int main(){
+hashtable tb;
+tb.insert(1,4);
+tb.insert(2,5);
+cout<<tb.isPresent(4,1);
+cout<<tb.isPresent(7,3);
+//cout<<tb.getValue(1);
+
+}
