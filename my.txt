@@ -1,4 +1,10 @@
-git init
-git status
-git add .....
-git diff
+Please describe your motivation, academic preparation and aptitude for graduate study at UC Davis. You should describe your academic plans and research interests, your specialization within your academic field, your research experiences and your career goals. You may consider how your past experiences and the opportunities you recognize at UC Davis (i.e. specific faculty and resources) will converge in the work you anticipate doing for the degree.
+
+Describe yr motivation, academic preparation and aptitude for graduate study
+
+You should describe your academic plans and research interests, your specialisation within your academic field, your research experiences and your career goals. You may consider how your past experiences and the opportunities you recognize at UC Davis (i.e. specific faculty and resources) will converge in the work you anticipate doing for the degree.
+
+Why you want to do ms? Why are you ready for masters?  What are your research interest, (what have you done in this field), what is your career goal. How can the university help?
+
+
+1. Eye catching line about your self or your project (in 1st para to distinguish you from rest of the students)  2. Talk more on what you’ll do when admitted    I was not the topper in my college, but surely was one of the richest student around in college. In sophomore year, when most of the students were staring to learn basics of data structures, I was freelancing and making android apps for startups. In junior year, I was teaching algorithms and data structures at a education firm named Coding blocks and later in the same year I qualified for GSOC. These endeavours apart from bringing money, brought loads of experience.
