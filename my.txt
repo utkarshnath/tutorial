@@ -7,4 +7,14 @@ You should describe your academic plans and research interests, your specialisat
 Why you want to do ms? Why are you ready for masters?  What are your research interest, (what have you done in this field), what is your career goal. How can the university help?
 
 
-1. Eye catching line about your self or your project (in 1st para to distinguish you from rest of the students)  2. Talk more on what you’ll do when admitted    I was not the topper in my college, but surely was one of the richest student around in college. In sophomore year, when most of the students were staring to learn basics of data structures, I was freelancing and making android apps for startups. In junior year, I was teaching algorithms and data structures at a education firm named Coding blocks and later in the same year I qualified for GSOC. These endeavours apart from bringing money, brought loads of experience.
+1. Eye catching line about your self or your project (in 1st para to distinguish you from rest of the students)  2. Talk more on what you’ll do when admitted 
+
+
+I was not the topper in my college, but surely was one of the richest student around in college. In sophomore year, when most of the students were staring to learn basics of data structures, I was freelancing and making android apps for startups. In junior year, I was teaching algorithms and data structures at a education firm named Coding blocks and later in the same year I qualified for GSOC. These endeavours apart from bringing money, brought loads of experience.
+
+Establish the fact that you have interest in algorithms and machine learning
+
+From childhood days, mathematics has been my favourite subject, it attracted me because there is nothing to be memorized. Everything in mathematics is simply based on logic and if  I forgot some formula, then I could simply derive it from my previous knowledge. Then I was introduced to programing as a fresher in college. Programming is similar to mathematics, here we first solve different smaller problems and then join them to solve the original problem. I still clearly remember my first programming class, our professor started the class by giving us a question. He asked us to tell the hundredth prime number within 10 minutes. After everyone failed, he just wrote a few line of code and within a second, we saw 541 being printed on the screen.  A few lines of code had magically solved a problem which human brain wasn’t able to solve. This small exercise had a huge impact on my career, though I didn’t understood the exact code, I knew this is something I would love to do. After this I became very passionate about programming, I went well beyond the prescribed syllabus, learned different data structures and read about numerous algorithms.
+
+
+Then establish your research inclination, np hard problems
