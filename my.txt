@@ -7,10 +7,11 @@ You should describe your academic plans and research interests, your specialisat
 Why you want to do ms? Why are you ready for masters?  What are your research interest, (what have you done in this field), what is your career goal. How can the university help?
 
 
-1. Eye catching line about your self or your project (in 1st para to distinguish you from rest of the students)  2. Talk more on what you’ll do when admitted 
+1.	Eye catching line about your self or your project (in 1st para to distinguish you from rest of the students)  2. Talk more on what you’ll do when admitted    
 
 
-I was not the topper in my college, but surely was one of the richest student around in college. In sophomore year, when most of the students were staring to learn basics of data structures, I was freelancing and making android apps for startups. In junior year, I was teaching algorithms and data structures at a education firm named Coding blocks and later in the same year I qualified for GSOC. These endeavours apart from bringing money, brought loads of experience.
+
+I was not the topper in my college, but surely was one of the richest students around in college. In sophomore year, when most of the students were staring to learn basics of data structures, I was freelancing and making android apps for startups. In junior year, I was teaching algorithms and data structures at an education firm named Coding blocks and later in the same year I qualified for GSOC. These endeavours helped me earn money, but made me the richest in terms of the skills and experience I gained and the qualities I imbibed, giving me a clear picture how I wanted to drive myself further. 
 
 Establish the fact that you have interest in algorithms and machine learning
 
@@ -20,3 +21,18 @@ Apart from algorithms I got interested in machine learning. Machine learning is 
 as minor project in junior year and both of the time I was ranked in top ten projects. While working on recommender systems, I stumbled upon a paper titled ‘Clustering using same-cluster queries’ which was oral presentation appeared at NIPS 2016. I had some doubts in the paper, so I contacted the co-authors. Since then, we started working on a similar problem ‘Convergence properties of K-means with and without queries’. K means is a popular clustering algorithm. However, it comes with very few theoretical guaranties. Under what conditions would it reach a global minima, what datasets should k-means be applied? These are some important questions which do not have satisfactory answers in current literature. I performed certain experiments which showed that if data consists of well separated balls then with high probability  the kmeans algorithm finds the intended solution as long as initial choice of centres is satisfactory. We also provided theoretical guarantees for the same. Working on the problem gave me opportunity to interact with prof. yaoliang Yu  and some of his Phd students in university of Waterloo.   
 
 Then establish your research inclination, np hard problems
+
+I have always liked hard problems and what could be harder than np hard. The above mentioned projects gave me the opportunity to do in-depth analysis of some of the np-hard problems.
+
+something about np hard problems, why they are important?
+
+I want to conduct further research in this field. I want to answer questions like in what conditions can the np hard problems reach a global minima, what constraints can we apply to solve it in polynomial time ?
+
+why this university and why these prof  
+
+Apart from my research, I have always wanted to give my share of knowledge back to the society. Apart from teaching algorithms at Coding blocks and Code Junkies, I was also the Google facilitator for the year 2017-2018. I was appointed by Google India to conduct their applied CS program in my college. Google applied CS program was different than any other cs course. Here I had to teach different data structures through development of android application. Teaching college students is lot of fun but 
+I worked with Suryasanthan, a NGO that aims at empowering people who struggle to earn bread for their living. Here we helped people with some computer applications like MS Word, Excel  so that they could get a job.
+
+
+want to become a ta
+
