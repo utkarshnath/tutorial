@@ -7,7 +7,6 @@ You should describe your academic plans and research interests, your specialisat
 Why you want to do ms? Why are you ready for masters?  What are your research interest, (what have you done in this field), what is your career goal. How can the university help?
 
 
-
 I was not the topper in my college, but surely was one of the richest students around in college. In sophomore year, when most of the students were starting to learn basics of data structures, I was freelancing and making android apps for startups. In junior year, I was teaching algorithms and data structures at an education firm named Coding blocks and later in the same year I qualified for GSOC. These endeavours helped me earn money, but made me the richest in terms of the skills and experience I gained and the qualities I imbibed, giving me a clear picture how I wanted to drive myself further. 
 
 Establish the fact that you have interest in algorithms and machine learning
@@ -22,21 +21,7 @@ While working on recommender systems, I stumbled upon a paper titled ‘Clusteri
 
 Working on the problem gave me opportunity to interact with Prof. Yaoliang Yu  and some of his Phd students at the University of Waterloo. This was first experience of how graduate-level research looks like. This also got me interested in the field of clustering. Thus, for my undergraduate research project I worked on a project “Clustering for categorical data” with Prof. Rahul Katarya.  Objects have attributes which are not always numerical, sometimes attributes have domain or categories to which they could belong to. Such data is called categorical data. To group such categorical data many clustering algorithms are used. The k-modes algorithm is a popular choice for clustering categorical data. For my undergraduate project, we have proposed a novel similarity-based distance (SBD) metric to find the distance between objects of categorical data. Our experiments showed that our proposed distance (SBD), when used with the SBC (space structure based clustering) type algorithm significantly outperforms the existing algorithms like k-modes or other SBC type algorithms when used on categorical datasets.
 
-
-
-
-MALAYSIA WALA PAPER KA DETAILS KIDHAR HAI?
-
-The projects that you have done will establish your research inclination.  
-Then establish your research inclination, np hard problems
-
-I have always liked hard problems and what could be harder than np hard. The above mentioned projects gave me the opportunity to do in-depth analysis of some of the np-hard problems.
-
-something about np hard problems, why they are important?
-
-What exactly do you want to do if received an admit?
-
-I want to conduct further research in this field. I want to answer questions like in what conditions can the np hard problems reach a global minima, what constraints can we apply to solve it in polynomial time ?
+Machine Learning is a vast area with many sub-disciplines like supervised learning, un-supervised learning and reinforcement learning. Each of these sub-disciplines can themselves be divided into further sub-fields. Moreover, the field is changing at an exponential rate. Many machine learning problems were considered hard a few years ago. A lot of these problems have not only been solved but human-level accuracy has been reached with only a few years of research effort. As an undergraduate student, I feel that I have barely scratched the surface of this area. The projects described in the previous paragraphs show that I have the required skills to carry out graduate level research. Broadly, I am interested in studying machine learning problems from an optimization perspective. Non-convex optimization, although NP-Hard is regularly applied in areas like clustering, deep learning and many others. Understanding the convergence behavior, developing better optimization algorithms for highly non-convex models (like deep learning) is something that interests me.
 
 why this university and why these prof  
 
@@ -45,13 +30,3 @@ why this university and why these prof
 
 From July 2018, I have been working with Samsung Research. My team remote services focuses on remotely solving the problems faced by our millions of smart TV users. My current projects aims at selecting a few hundred TVs best suited for analysis from a large pool of “10 million” Smart TVs. Logs from this smaller pool is then compressed and sent to our server for further investigation.
 Being in the corporate world for past few months, I've had the taste of a comfortable life. Getting a fixed salary end of every month, doing the work I love, amidst highly intellectual people. But somewhere I always knew my calling lies in full research and innovation. I think university ‘blah blah ‘ can help me here.Having followed some of the research work done in ‘blah blah’ lab/area at the university, I feel I could be a worthy addition to the ‘something good’ scholars/research work here. Some of the most renowned researchers like ‘’’bluh bluh ’’ started from here and I feel I could make ‘*maximum*’ use of this platform.
-
-
-
-Besides my research and projects,one more thing that I have always tried to put my time and  effort into is giving my share of knowledge back to the society. Apart from teaching algorithms at Coding blocks and Code Junkies, I was also the Google facilitator for the year 2017-2018. I was appointed by Google India to conduct their applied CS program in my college. Google applied CS program was different than any other CS course. Here I had to teach different data structures through development of android application. Teaching college students is lot of fun and challenge, but I experienced the satisfaction of teachingBut the stint that gave me most satisfaction was working with Suryasanthan. It is a NGO that aims at empowering people who struggle to earn bread for their living. Here we helped people learn basic computer applications like MS Word, Excel so they could get a decent desk job.
-
-
-
-
-This experience made me realise I would definitely want to keep teaching as T.A. when I join college.
-
