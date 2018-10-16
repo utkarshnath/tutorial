@@ -1,3 +1,162 @@
+
+#include<iostream>
+using namespace std;
+int factorial(int n){
+    if(n==0||n==1){
+        return 1;
+    }
+    cout<<n<<endl;
+    return n*factorial(n-1);
+}
+int fibo(int n){
+    if(n==0){
+        return 0;
+    }
+    if(n==1){
+        return 1;
+    }
+    int a = fibo(n-2);
+    int b = fibo(n-1);
+    return a+b;
+}
+bool check_sorted(int arr[10],int n){
+    if(n==0 || n==1){
+        return true;
+    }
+    bool is_sorted = check_sorted(arr,n-1);
+    if(is_sorted && arr[n-2]<=arr[n-1]){
+        cout<<arr[n-2]<<" "<<arr[n-1]<<endl;
+        return true;
+    }else{
+        return false;
+    }
+}
+
+int sum_array(int arr[10],int n){
+    if(n==1){
+        return arr[n-1];
+    }
+    int sum = sum_array(arr,n-1);
+    int current = arr[n-1];
+    return sum+current;
+}
+
+void selection_sort(int arr[10],int n,int index){
+    if(index>=n){
+        return;
+    }
+    int min = arr[index];
+    int min_index = index;
+    for(int i=index+1;i<n;i++){
+        if(arr[i]<min){
+            min = arr[i];
+            min_index = i;
+        }
+    }
+    arr[min_index] = arr[index];
+    arr[index] = min;
+    selection_sort(arr,n,index+1);
+    return;
+}
+void print_inc(int n){
+    if(n<1){
+        return;
+    }
+    print_inc(n-1);
+    cout<<n<<endl;
+    return;
+}
+void print_dec(int n){
+    if(n<1){
+        return;
+    }
+    cout<<n<<endl;
+    print_dec(n-1);
+    return;
+}
+bool check_7(int n){
+    if(n<=0){
+        return false;
+    }
+    int x = n%10;
+    if(x==7){
+        return true;
+    }else{
+        return check_7(n/10);
+    }
+}
+
+void bubble_sort(int arr[10],int n,int i,int j){
+    if(j>=n-i-1){
+        return;
+    }
+    if(arr[j]>arr[j+1]){
+        int temp = arr[j];
+        arr[j] = arr[j+1];
+        arr[j+1] = arr[j];
+    }
+    for(int i=0;i<n;i++){
+        bubble_sort(arr,n,i,j+1);
+    }
+}
+
+int str_to_int(char arr[100],int index){
+    static int curr = 0;
+    if(!arr[index]){
+        return curr;
+    }
+    int k = arr[index] - 48;
+    curr = curr*10+k;
+    return str_to_int(arr,index+1);
+
+
+}
+
+bool binary_search(int arr[10],int start,int end,int k){
+    if(start>end){
+        return false;
+    }
+    int mid = (start+end)/2;
+    if(arr[mid]==k){
+        return true;
+    }
+    else if(arr[mid]>k){
+        end = mid-1;
+    }else{
+        start = mid+1;
+    }
+    return binary_search(arr,start,end,k);
+}
+int main(){
+int arr[10] = {109,22,63,43,5};
+/*
+cout<<check_sorted(arr,5)<<endl;
+cout<<sum_array(arr,5)<<endl;
+selection_sort(arr,5,0);
+for(int i=0;i<5;i++){
+    cout<<arr[i]<<" ";
+}
+print_inc(10);
+print_dec(10);
+*/
+cout<<check_7(3724085)<<endl;
+
+cout<<str_to_int("160923",0)<<endl;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #include<iostream>
 using namespace std;
 struct node{
