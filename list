@@ -127,8 +127,77 @@ bool binary_search(int arr[10],int start,int end,int k){
     }
     return binary_search(arr,start,end,k);
 }
+
+// mergesort
+void merge(int arr[10],int start,int mid,int end){
+    int temp[100];
+    int index = start;
+    int start2 = mid+1;
+    while(start<=mid && start2<=end){
+        if(arr[start]<arr[start2]){
+            temp[index++] = arr[start++];
+        }else{
+            temp[index++] = arr[start2++];
+        }
+    }
+    while(start<=mid){
+        temp[index++] = arr[start++];
+    }
+    while(start2<=end){
+        temp[index++] = arr[start2++];
+    }
+    for(int i=0;i<=end;i++){
+        arr[i] = temp[i];
+    }
+}
+
+void merge_sort(int arr[10],int start,int end){
+    if(start>=end){
+        return;
+    }
+    int mid = (start+end)/2;
+    merge_sort(arr,start,mid);
+    merge_sort(arr,mid+1,end);
+    merge(arr,start,mid,end);
+    return;
+}
+
+//print all sub sequence
+void print_subsequence(int input[10],int n,int output[10],int outputIndex,int inputIndex){
+    if(inputIndex>=n){
+        for(int i=0;i<outputIndex;i++){
+            cout<<output[i]<<" ";
+        }
+        cout<<endl;
+        return;
+    }
+    output[outputIndex] = input[inputIndex];
+    print_subsequence(input,n,output,outputIndex+1,inputIndex+1);
+    print_subsequence(input,n,output,outputIndex,inputIndex+1);
+    return;
+}
+// permutation
+void permute(char arr[100],int i){
+    if(arr[i]=='\0'){
+        cout<<arr<<endl;
+    }
+    for(int j=i;arr[j]!='\0';j++){
+        swap(arr[i],arr[j]);
+        permute(arr,i+1);
+        swap(arr[i],arr[j]);
+    }
+
+}
+
+
+// quick_sort
+// nqueens
+// Sudoko
+
+
 int main(){
-int arr[10] = {109,22,63,43,5};
+int arr[10] = {1,2,3,4,5};
+int temp[10] = {0};
 /*
 cout<<check_sorted(arr,5)<<endl;
 cout<<sum_array(arr,5)<<endl;
@@ -139,11 +208,19 @@ for(int i=0;i<5;i++){
 print_inc(10);
 print_dec(10);
 */
-cout<<check_7(3724085)<<endl;
+//cout<<check_7(3724085)<<endl;
+//cout<<str_to_int("160923",0)<<endl;
 
-cout<<str_to_int("160923",0)<<endl;
+/*
+merge_sort(arr,0,4);
+for(int i=0;i<5;i++){
+    cout<<arr[i]<<" ";
+}*/
+
+//print_subsequence(arr,5,temp,0,0);
+char arr1[10] = "abc";
+permute(arr1,0);
 }
-
 
 
 
