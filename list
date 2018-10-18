@@ -186,19 +186,161 @@ void permute(char arr[100],int i){
         permute(arr,i+1);
         swap(arr[i],arr[j]);
     }
-
 }
-
-
 // quick_sort
 // nqueens
-// Sudoko
+bool is_safe(int arr[100][100],int n,int x,int y){
+    for(int i=x+1,j=y;i<n;i++){
+        if(arr[i][j]){
+            return false;
+        }
+    }
+    for(int i=x-1,j=y;i>=0;i--){
+        if(arr[i][j]){
+            return false;
+        }
+    }
+    for(int i=x,j=y+1;j<n;j++){
+        if(arr[i][j]){
+            return false;
+        }
+    }
+    for(int i=x,j=y-1;j>=0;j--){
+        if(arr[i][j]){
+            return false;
+        }
+    }
+    for(int i=x-1,j=y+1;i>=0 && j<n;i--,j++){
+        if(arr[i][j]){
+            return false;
+        }
+    }
+    for(int i=x+1,j=y+1;i<n && j<n;i++,j++){
+        if(arr[i][j]){
+            return false;
+        }
+    }
+    for(int i=x+1,j=y-1;i<n && j>=0;i++,j--){
+        if(arr[i][j]){
+            return false;
+        }
+    }
+    for(int i=x-1,j=y-1;i>=0 && j>=0;i--,j--){
+        if(arr[i][j]){
+            return false;
+        }
+    }
+    return true;
+}
 
+int nqueens(int arr[100][100],int n,int x,int y){
+    if(y==n){
+        cout<<"*****************"<<endl;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                cout<<arr[i][j];
+            }
+            cout<<endl;
+        }
+        cout<<"*****************"<<endl;
+        return 1;
+    }
+    int sum=0;
+    for(int i=0;i<n;i++){
+        if(is_safe(arr,n,i,y)){
+            arr[i][y] = 1;
+            sum+=nqueens(arr,n,0,y+1);
+            arr[i][y] = 0;
+        }
+    }
+    return sum;
+}
+// Sudoko
+bool check(int arr[100][100],int n,int x,int y,int value){
+    for(int i=x,j=y+1;j<9;j++){
+        if(arr[i][j]==value){
+            return false;
+        }
+    }
+    for(int i=x,j=y-1;j>=0;j--){
+        if(arr[i][j]==value){
+            return false;
+        }
+    }
+    for(int i=x+1,j=y;i<9;i++){
+        if(arr[i][j]==value){
+            return false;
+        }
+    }
+    for(int i=x-1,j=y;i>=0;i--){
+        if(arr[i][j]==value){
+            return false;
+        }
+    }
+    int x1=3*(x/3);
+    int y1=3*(y/3);
+    for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){
+            if(arr[x1+i][y1+j]==value){
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+bool sudoko(int arr[100][100],int n,int x,int y){
+    if(y==n && x==n-1){
+        cout<<"*****************"<<endl;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                cout<<arr[i][j];
+            }
+            cout<<endl;
+        }
+        cout<<"*****************"<<endl;
+        return true;
+    }
+    if(y==n){
+        x++;
+        y=0;
+    }
+
+    if(arr[x][y]==0){
+        for(int k=1;k<10;k++){
+            if(check(arr,n,x,y,k)){
+                arr[x][y] = k;
+                bool done = sudoko(arr,n,x,y+1);
+                if(done){
+                    return true;
+                }
+                arr[x][y] = 0;
+            }
+        }
+    }else{
+        return sudoko(arr,n,x,y+1);
+    }
+    return false;
+}
 
 int main(){
-int arr[10] = {1,2,3,4,5};
-int temp[10] = {0};
+int grid[100][100] = {{3, 0, 6, 5, 0, 8, 4, 0, 0},
+                      {5, 2, 0, 0, 0, 0, 0, 0, 0},
+                      {0, 8, 7, 0, 0, 0, 0, 3, 1},
+                      {0, 0, 3, 0, 1, 0, 0, 8, 0},
+                      {9, 0, 0, 8, 6, 3, 0, 0, 5},
+                      {0, 5, 0, 0, 9, 0, 6, 0, 0},
+                      {1, 3, 0, 0, 0, 0, 2, 5, 0},
+                      {0, 0, 0, 0, 0, 0, 0, 7, 4},
+                      {0, 0, 5, 2, 0, 6, 3, 0, 0}};
+cout<<sudoko(grid,9,0,0)<<endl;
+
 /*
+int arr[100][100] = {0};
+cout<<nqueens(arr,3,0,0);
+//int arr[10] = {1,2,3,4,5};
+int temp[10] = {0};
+
 cout<<check_sorted(arr,5)<<endl;
 cout<<sum_array(arr,5)<<endl;
 selection_sort(arr,5,0);
@@ -219,7 +361,7 @@ for(int i=0;i<5;i++){
 
 //print_subsequence(arr,5,temp,0,0);
 char arr1[10] = "abc";
-permute(arr1,0);
+//permute(arr1,0);
 }
 
 
