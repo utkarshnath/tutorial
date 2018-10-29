@@ -101,6 +101,7 @@ node* createll(){
     node * head;
     if(data!=-1){
         head = new node(data);
+
     }
     node * it = head;
     cin>>data;
@@ -132,7 +133,7 @@ void createll2(node ** head){
     return;
 }
 
-void createll3(node* head){
+void createll3(node* &head){
     cout<<"Enter data and -1 to exit"<<endl;
     int data;
     cin>>data;
@@ -157,13 +158,91 @@ void print(node * head){
     }
     cout<<"NULL"<<endl;
 }
+
+//finding next element
+node * nextElement(node* element){
+    if(element==NULL){
+        cout<<"Use yr brain, don't give me null value"<<endl;
+        return 0;
+    }
+    return element->next;
+}
+
+//inserting at top
+void insertAtTop(node **head,int data){
+    node * temp = new node(data);
+    temp->next = *head;
+    *head = temp;
+    return;
+}
+
+//inserting at last
+void insertAtLast(node **head,int data){
+    node * temp = new node(data);
+    if(*head==0){
+        *head = temp;
+    }
+    node * it = *head;
+    while(it->next!=NULL){
+        it = it->next;
+    }
+    it->next = temp;
+}
+
+//insert at position K
+void insertAtPositionK(node **head,int data,int k){
+    node * temp = new node(data);
+    if(k==0){
+        temp->next = *head;
+        *head = temp;
+        return;
+    }
+    node * it = *head;
+    while(--k){
+        it = it->next;
+    }
+    temp->next = it->next;
+    it->next = temp;
+    return;
+}
+
+
+//delete at position K
+void deleteAtPositionK(node **head,int k){
+    node * temp = *head;
+    if(k==0){
+        *head = temp->next;
+        delete temp;
+        return;
+    }
+
+    while(--k){
+        temp = temp->next;
+    }
+    node * it = temp->next;
+    temp->next = temp->next->next;
+    delete it;
+}
 int main(){
 //node * head = createll();
 
 //node * head = 0;
 //createll2(&head);
+//node * head = 0;
+//createll3(head);
 node * head = 0;
-createll3(head);
+insertAtTop(&head,1);
+insertAtTop(&head,2);
+insertAtLast(&head,7);
+insertAtLast(&head,8);
+insertAtTop(&head,3);
+insertAtLast(&head,4);
+deleteAtPositionK(&head,0);
+print(head);
+insertAtPositionK(&head,12,0);
+insertAtPositionK(&head,45,1);
+insertAtPositionK(&head,13,5);
+deleteAtPositionK(&head,6);
 print(head);
 }
 
