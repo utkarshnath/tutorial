@@ -223,6 +223,41 @@ void deleteAtPositionK(node **head,int k){
     temp->next = temp->next->next;
     delete it;
 }
+int length(node * head){
+    int len = 0;
+    while(head){
+        len++;
+        head = head->next;
+    }
+    return len;
+}
+node * findNode_front(node * head,int data){
+    if(head==NULL){
+        return NULL;
+    }
+    cout<<head->data<<endl;
+    if(head->data == data){
+        return head;
+    }
+    node * found;
+    found = findNode_front(head->next,data);
+    return found;
+}
+node * findNode_back(node * head,int data){
+    if(head==NULL){
+        return NULL;
+    }
+    cout<<head->data<<endl;
+    node * found;
+    found = findNode_back(head->next,data);
+    if(found){
+        return found;
+    }
+    if(head->data==data){
+        return head;
+    }
+    return NULL;
+}
 int main(){
 //node * head = createll();
 
