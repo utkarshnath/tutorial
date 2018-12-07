@@ -21,3 +21,24 @@ Hence as per the aforementioned points, I believe that I will be a good fit for 
 Over the recent years ASU has constantly ranked as the top innovation school. It’s home for some top researchers in the field of artificial intelligence like Professor Subbarao Kambhampati wo is also the president of international Association for the advancement of artificial intelligence(AAAI).
 
 Besides my research and projects,one more thing that I have always tried to put my time and  effort into is giving my share of knowledge back to the society. Apart from teaching algorithms at Coding blocks and Code Junkies, I was also the Google facilitator for the year 2017-2018. I was appointed by Google India to conduct their applied CS program in my college. Google applied CS program was different than any other CS course. Here I had to teach different data structures through development of android application. Teaching college students is lot of fun and challenge, but I experienced the satisfaction of teachingBut the stint that gave me most satisfaction was working with Suryasanthan. It is a NGO that aims at empowering people who struggle to earn bread for their living. Here we helped people learn basic computer applications like MS Word, Excel so they could get a decent desk job.
+
+
+
+
+Course :https://cse.ucsd.edu/graduate/courses/course-listing/course-descriptions
+CSE 255. Data Mining and Predictive Analytics (4)
+CSE258 - Recommender Systems & Web Mining
+Ye sab AI group ke hain:::::
+
+Kamalika Chaudhari’s research on scaling Nearest Neighbour methods to large scale datasets
+http://cseweb.ucsd.edu/~kamalika/#papers     ---https://arxiv.org/abs/0912.0086 
+
+If I am honoured to be a part of this legacy I’d love to be a part of AI group as my interest aligns with most of the faculty that is part of the group. Especially, Kamalika Chaudhari and Lawrence K Saul.
+
+https://scholar.google.com/citations?user=Hft_8cgAAAAJ&hl=en&oi=ao  isme pehla point non linear dimentionality reduction vale me se point khojdo.
+
+http://cseweb.ucsd.edu/~dasgupta/research.html 
+https://cseweb.ucsd.edu/~jmcauley/  isme recommendor systmes ka hai
+Can see
+http://pages.ucsd.edu/~ztu/Research.htm 
+http://www.ai.ucsd.edu/ :::::list of all profs
